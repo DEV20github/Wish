@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: black;
+    color: yellow;
+}
+
+.hearts,
+.hats,
+.gifts,
+.flowers {
+    position: fixed;
+    font-size: 1.5rem;
+    top: -5vh;
+    transform: translateY(0);
+}
+
+.hearts {
+    animation: fall 4s linear forwards;
+}
+
+.hats {
+    animation: fall 3s linear forwards;
+}
+
+.gifts {
+    animation: fall 5s linear forwards;
+}
+
+.flowers {
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
